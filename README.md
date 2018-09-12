@@ -1,5 +1,5 @@
 # docker-php7.2-v8js-nginx-ioncube
-Docker with PHP7.2-FPM, V8JS, Nginx, and the Ioncube Loader installed.
+Docker with PHP7.2-FPM, V8JS, Nginx, and the Ioncube Loader installed. Initialises with ports 80 and 443 exposed, will show phpinfo on connection.
 
 
 Bits and pieces taken from the following repositories:
