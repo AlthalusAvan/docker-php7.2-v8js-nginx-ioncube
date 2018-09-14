@@ -67,6 +67,9 @@ RUN tar xvfz /tmp/ioncube_loaders_lin_x86-64.tar.gz \
 
 COPY ./00-ioncube.ini /etc/php/7.2/fpm/conf.d/00-ioncube.ini
 
+RUN curl -sS https://getcomposer.org/installer -o composer-setup.php \
+    && php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
 WORKDIR /var/www/app/
 
 EXPOSE 80 443
